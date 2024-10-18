@@ -19,7 +19,9 @@ def api_data():
     return jsonify(message=f"Received data for {name}, age {age}.")
 
 
-
+@app.route('/login')
+def login():
+    return render_template('login.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
