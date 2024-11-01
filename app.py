@@ -1,7 +1,7 @@
 from flask import Flask, render_template,request,jsonify
 
 app = Flask(__name__)
-
+#Comment Addded
 
 
 @app.route('/appGetMethod/<username>', methods=['GET', 'POST'])
